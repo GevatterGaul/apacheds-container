@@ -19,3 +19,9 @@ The tags follow the ApacheDS naming scheme with an added build number: For versi
 # Data persistance
 
 ApacheDS will store its data in '/opt/apacheds/instances'. So you could mount a volume or a bind mount there.
+
+# Resources
+
+I wrote a blogpost explaining the [ApacheDS docker container](https://boredconsultant.com/2020/09/27/ApacheDS-LDAP-Server-on-Docker-with-Ansible/).
+
+I published the [source code of the ApacheDS docker container](https://github.com/GevatterGaul/apacheds-container) on GitHub.
