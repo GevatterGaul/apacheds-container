@@ -1,6 +1,9 @@
 FROM alpine:3.16
 
-RUN apk add openjdk11-jre bash
+RUN apk update && \
+    apk add openjdk11-jre bash && \
+    rm -rf /var/cache/apk/*
+    
 COPY ./apacheds /opt/apacheds
 COPY config/config.ldif /opt/apacheds/config.ldif.default
 COPY config/log4j.properties /opt/apacheds/log4j.properties.default
